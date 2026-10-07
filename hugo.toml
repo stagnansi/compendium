@@ -1,0 +1,49 @@
+baseURL = "https://compendium.bara.asia/"
+theme = 'hugo-bearblog'
+
+title = "Compendium°"
+author = "Bara"
+copyright = "Copyright © 2026, Bara."
+locale = "id-ID"
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Hugo"
+  url = "/hugo/"
+  weight = 10
+
+[[menu.main]]
+  name = "Bear"
+  url = "/bear/"
+  weight = 20
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 100
+
+[params]
+  description = "Eksplorasi franchise pop culture untuk orang awam."
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
+  title = "Compendium°"
+  hideMadeWithLine = false
+
+[markup]
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
